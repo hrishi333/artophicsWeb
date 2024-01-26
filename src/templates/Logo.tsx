@@ -5,7 +5,9 @@ type ILogoProps = {
 };
 
 const Logo = (props: ILogoProps) => {
+/*
   const size = props.xl ? '44' : '32';
+*/
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
@@ -29,7 +31,9 @@ const Logo = (props: ILogoProps) => {
         <rect x="15" y="4" width="6" height="16" rx="1" />
         <path d="M4 20h14" />
       </svg>*/}
-      <img className=" h-[50px] w-full" src='./artophics_logo_black_nobg.png' alt={"logo"}></img> {/*artophics logo*/}
+      <img  className={`h-[44px]  mr-2`}
+            src='./artophics_logo_black_nobg.png'
+            alt={"logo"}></img> {/*artophics logo*/}
       {AppConfig.site_name}
     </span>
   );
