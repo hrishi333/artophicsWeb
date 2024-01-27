@@ -12,8 +12,6 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
     const router = useRouter();
-    console.log(props.canonical, "check cononicale");
-
     return (
         <>
             <Head>
@@ -47,12 +45,12 @@ const Meta = (props: IMetaProps) => {
                     href={`${router.basePath}`}
                     key="favicon"
                 />
-                <link rel="canonical" href="https://www.artophics.com/home"/>
+                <link rel="canonical" href="https://www.artophics.com/"/>
             </Head>
             <NextSeo
                 title={props.title}
                 description={props.description}
-                canonical="https://www.artophics.com/home"
+                canonical="https://www.artophics.com/"
                 openGraph={{
                     title: props.title,
                     description: props.description,
